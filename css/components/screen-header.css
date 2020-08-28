@@ -12,3 +12,15 @@
 .screen-header__icons a {
   margin-left: 20px;
 }
+.screen-header__icons a:last-child {
+  position: relative;
+}
+.screen-header__cog-badge {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -10px;
+  right: -5px;
+}
