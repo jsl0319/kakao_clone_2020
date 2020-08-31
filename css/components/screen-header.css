@@ -24,3 +24,16 @@
   top: -10px;
   right: -5px;
 }
+
+@keyframes ratateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: ratateCog 1s linear infinite;
+}
