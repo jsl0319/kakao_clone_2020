@@ -13,12 +13,25 @@
 #chat-screen .alt-header {
   top: 20px;
 }
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .chat__timestamp {
   color: white;
@@ -28,6 +41,7 @@
   border-radius: 20px;
   margin-bottom: 20px;
 }
+
 .massege-row {
   display: flex;
   width: 100%;
